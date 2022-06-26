@@ -2,7 +2,7 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosphor-react";
 import { useGetLessonsBySlugQuery } from "../graphql/generated";
 
-import '@vime/core/themes/Default.css'
+import "@vime/core/themes/Default.css"
 
 
 interface VideoProps{
@@ -32,7 +32,7 @@ export function Video(Props: VideoProps){
                 <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                     <Player>
                         <Youtube videoId={data.lesson.videoId} />
-                        <DefaultUi/>
+                        <DefaultUi />
                     </Player>
                 </div>
             </div>
